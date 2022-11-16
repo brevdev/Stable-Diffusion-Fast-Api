@@ -1,4 +1,4 @@
-Most of the work here was done by [Christian Cantrell](https://github.com/cantrell). Please check him out!
+This repo will run a fast api for text to image Stable Diffusion. Most of the work here was done by [Christian Cantrell](https://github.com/cantrell). Please check him out!
 
 # To run on your own machine:
 
@@ -10,6 +10,8 @@ uvicorn server:app --reload
 This will create a virtual environment with all the dependencies you need and then run the server. If you don't have the Stable Diffusion model downloaded, this will download it before running the server.
 
 # To run on Brev:
+[![](https://uohmivykqgnnbiouffke.supabase.co/storage/v1/object/public/landingpage/pill-border-lg.png)](https://console.brev.dev/environment/new?repo=https://github.com/brevdev/Stable-Diffusion-Fast-Api.git&instance=g5.xlarge&diskStorage=60)
+
 
 Create your environment by following this [link](https://console.brev.dev/environment/new?repo=https://github.com/brevdev/Stable-Diffusion-Fast-Api.git&instance=g5.xlarge&diskStorage=60) pre-populated with config you need.
 
