@@ -1,3 +1,30 @@
+Most of the work here was done by [Christian Cantrell](https://github.com/cantrell). Please check him out!
+
+# To run:
+
+```
+conda activate sd-api-server
+python3 server.py
+```
+
+# Deploying on Brev:
+
+Create your environment by following this [link](https://console.brev.dev/environment/new?repo=https://github.com/brevdev/Stable-Diffusion-Fast-Api.git&instance=g5.2xlarge&diskStorage=60) pre-populated with config you need.
+
+Install the Brev CLI and open your Stable Diffusion Fast Api environmnent:
+brev
+
+```
+conda activate sd-api-server
+python3 server.py
+```
+
+Then to make requests:
+
+1. Forward port 8000 in VScode
+2. Go to [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) or make calls through [http://127.0.0.1:8000/txt2img?prompt=Snoop+Dogg](http://127.0.0.1:8000/txt2img?prompt=Snoop+Dogg)
+3. Then with Brev you can deploy publically right away!! Just go to [console.brev.dev/](https://console.brev.dev/), go to your Stable Diffusion env page and under Environment Settings you'll be able to expose ports publically. Make sure you expose port 8000!
+
 # Stable Diffusion API Server
 
 A local inference REST API server for the [Stable Diffusion Photoshop plugin](https://christiancantrell.com/#ai-ml). (Also a generic Stable Diffusion REST API for whatever you want.)
