@@ -113,7 +113,7 @@ class EngineManager(object):
 # App
 
 if not os.path.isfile('config.json'):
-    print('Please enter your HuggingFace token available here https://huggingface.co/settings/tokens:')
+    print("Please enter your HuggingFace token (it's available here https://huggingface.co/settings/tokens):")
     huggingface_token = input()
     # write token to config.json:
     with open('config.json', 'w') as f:
@@ -227,7 +227,6 @@ def _generate(task, prompt="Snoop Dogg", engine=None):
             #     mask_img_pil = b64_to_pil( mask_img_b64 )
             #     args_dict[ 'mask_image' ] = mask_img_pil
             # Perform inference:
-            print("ARGS DICT IS: ", args_dict)
             pipeline_output = engine.process( args_dict )
             pipeline_output[ 'seed' ] = new_seed
             total_results.append( pipeline_output )
