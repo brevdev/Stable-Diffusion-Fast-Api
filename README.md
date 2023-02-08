@@ -5,7 +5,7 @@ This repo will run a fast api for text to image Stable Diffusion. Most of the wo
 ```
 conda env create -f environment.yaml
 conda activate sd-api-server
-uvicorn server:app --reload
+uvicorn server:app --reload --host 0.0.0.0
 ```
 This will create a virtual environment with all the dependencies you need and then run the server. If you don't have the Stable Diffusion model downloaded, this will download it before running the server.
 
