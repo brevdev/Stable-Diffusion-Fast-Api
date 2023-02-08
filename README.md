@@ -22,7 +22,7 @@ brev open stable-diffusion-fast-api --wait
 Then activate your environment and run the server:
 ```
 conda activate sd-api-server
-uvicorn server:app --reload
+uvicorn server:app --reload --host 0.0.0.0
 ```
 
 Then to make requests:
