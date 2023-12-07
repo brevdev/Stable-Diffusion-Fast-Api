@@ -11,9 +11,9 @@ uvicorn server:app --reload --host 0.0.0.0
 If you don't have conda installed, you can use pip with:
 
 ```
-!python3 -m venv sd-api-server-env
-!source sd-api-server-env/bin/activate
-!pip install -r requirements.txt -q -U/
+python3 -m venv sd-api-server-env
+source sd-api-server-env/bin/activate
+pip install -r requirements.txt -q -U/
 ```
 
 This will create a virtual environment with all the dependencies you need and then run the server. If you don't have the Stable Diffusion model downloaded, this will download it before running the server.
