@@ -1,0 +1,11 @@
+accelerate
+numpy
+diffusers
+transformers
+Pillow
+Flask
+fastapi
+uvicorn
+torch 
+torchvision 
+torchaudio
